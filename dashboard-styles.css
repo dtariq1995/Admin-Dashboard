@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 0.7fr 1fr 1fr 1fr;
+    grid-template-columns: 0.75fr 1fr 1fr 1fr;
+    grid-template-areas: "sidebar header header header" "sidebar main main main" "sidebar main main main" "sidebar main main main";
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background-color: rgb(70, 166, 255);
+}
+
+#header {
+    grid-area: header;
+    box-shadow: 0 8px 6px -6px black;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+}
+
+#main {
+    grid-area: main;
+    background-color: rgb(210, 220, 228);
+}
