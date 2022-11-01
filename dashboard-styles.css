@@ -20,13 +20,18 @@ body {
     background-color: rgb(70, 166, 255);
     display: grid;
     color: white;
-    grid-template-rows: 0.5fr 1fr 0.4fr 3fr;
+    grid-template-rows: 0.50fr 1fr 0.4fr 2fr;
     grid-template-areas: "Logo" "Sections" "Space" "Settings";
     padding: 35px;
 }
 
 #header {
     grid-area: header;
+    padding: 35px;
+    padding-left: 45px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 #main {
@@ -54,5 +59,22 @@ body {
 #sidebar-settings {
     display: grid;
     grid-area: Settings;
-    grid-template-rows: 0.75fr 0.75fr 0.75fr 10fr;
+    grid-template-rows: 1fr 1fr 1fr 9fr;
+}
+
+.section-logo {
+    padding-right: 15px;
+}
+
+#search {
+    background-color: rgb(210, 220, 228);
+    border-width: 0px;
+    border-radius: 20px;
+    width: 80%;
+    height: 35px;
+}
+
+#searchbar {
+    display: flex;
+    align-items: center;
 }
