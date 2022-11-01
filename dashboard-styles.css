@@ -8,7 +8,7 @@ body {
     width: 100vw;
     height: 100vh;
     grid-template-rows: 0.7fr 1fr 1fr 1fr;
-    grid-template-columns: 0.75fr 1fr 1fr 1fr;
+    grid-template-columns: 300px 1fr 1fr 1fr;
     grid-template-areas: "sidebar header header header" "sidebar main main main" "sidebar main main main" "sidebar main main main";
     padding: 0;
     margin: 0;
@@ -20,17 +20,39 @@ body {
     background-color: rgb(70, 166, 255);
     display: grid;
     color: white;
-    grid-template-rows: 2fr 4fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.4fr 3fr;
+    grid-template-areas: "Logo" "Sections" "Space" "Settings";
+    padding: 35px;
 }
 
 #header {
     grid-area: header;
-    box-shadow: 0 8px 6px -6px black;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
 }
 
 #main {
     grid-area: main;
     background-color: rgb(210, 220, 228);
+}
+
+.sidebar-sections {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar-logo {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#sidebar-top {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+#sidebar-settings {
+    display: grid;
+    grid-area: Settings;
+    grid-template-rows: 0.75fr 0.75fr 0.75fr 10fr;
 }
