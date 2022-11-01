@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./Assets/Roboto-Font/Roboto-Regular.ttf);
+}
+
 body {
     display: grid;
     width: 100vw;
@@ -7,11 +12,15 @@ body {
     grid-template-areas: "sidebar header header header" "sidebar main main main" "sidebar main main main" "sidebar main main main";
     padding: 0;
     margin: 0;
+    font-family: Roboto;
 }
 
 #sidebar {
     grid-area: sidebar;
     background-color: rgb(70, 166, 255);
+    display: grid;
+    color: white;
+    grid-template-rows: 2fr 4fr 1fr 1fr 1fr;
 }
 
 #header {
