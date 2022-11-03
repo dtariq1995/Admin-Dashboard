@@ -161,7 +161,16 @@ button {
 #announcements {
     grid-area: Announcements;
     display: grid;
-    grid-template-rows: 0.14fr 1fr 0.14fr 1fr;
+    grid-template-rows: 0.105fr 1fr 0.105fr 1fr;
+    margin-right: 45px;
+}
+
+.announcements-card {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    box-shadow: 1px 3px 3px rgba(125, 125, 125, 0.614);
+    padding: 40px;
 }
 
 .project-card {
@@ -174,9 +183,25 @@ button {
     border-left-style: inset;
     border-left-width: 10px;
     border-left-color: rgba(128, 0, 255, 0.464);
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
 }
 
 .project-heading {
     font-size: 20px;
     font-weight: 900;
+}
+
+.project-icons {
+    align-self: end;
+    justify-self: end;
+}
+
+.project-icons img {
+    padding-left: 15px;
+}
+
+.project-text {
+    font-family: Roboto-Light;
+    
 }
