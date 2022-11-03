@@ -171,6 +171,10 @@ button {
     margin-bottom: 35px;
     box-shadow: 1px 3px 3px rgba(125, 125, 125, 0.614);
     padding: 40px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+
 }
 
 .project-card {
@@ -202,6 +206,51 @@ button {
 }
 
 .project-text {
+    font-family: Roboto-Light;   
+}
+
+.announcements-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.announcements-text {
+    padding-top: 3px;
+    font-size: 14px;
     font-family: Roboto-Light;
-    
+}
+
+.app-card {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    box-shadow: 1px 3px 3px rgba(125, 125, 125, 0.614);
+    padding: 25px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+.app-icon {
+    height: 64px;
+    width: 64px;
+    align-self: center;
+    justify-self: center;
+}
+
+.app-info {
+    padding-left: 16px;
+    display: grid;
+    align-self: center;
+    font-family: Roboto-Light;
+    gap: 5px;
+}
+
+.app-author {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.app-name {
+    font-size: 14px;
 }
