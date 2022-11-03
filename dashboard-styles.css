@@ -3,6 +3,11 @@
     src: url(./Assets/Roboto-Font/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: Roboto-Light;
+    src: url(./Assets/Roboto-Font/Roboto-Light.ttf);
+}
+
 body {
     display: grid;
     width: 100vw;
@@ -43,7 +48,9 @@ body {
     grid-area: main;
     background-color: rgb(210, 220, 228);
     display: grid;
-    
+    grid-template-columns: 2fr 0.8fr;
+    grid-template-areas: "Project Announcements";
+    padding: 40px 0 25px 35px;
 }
 
 .sidebar-sections {
@@ -136,4 +143,40 @@ button {
     justify-self: start;
     align-items: center;
     gap: 30px;
+}
+
+#projects {
+    grid-area: Project;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.15fr 1fr 1fr 1fr;
+}
+
+.main-heading {
+    font-family: Roboto-Light;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#announcements {
+    grid-area: Announcements;
+    display: grid;
+    grid-template-rows: 0.14fr 1fr 0.14fr 1fr;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 45px;
+    margin-bottom: 35px;
+    padding: 30px;
+    box-shadow: 1px 3px 3px rgba(125, 125, 125, 0.614);
+    border-left-style: inset;
+    border-left-width: 10px;
+    border-left-color: rgba(128, 0, 255, 0.464);
+}
+
+.project-heading {
+    font-size: 20px;
+    font-weight: 900;
 }
